@@ -1,0 +1,37 @@
+= form_for @subscription, :path => current_entry do |f|
+  -if @subscription.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@subscription.errors.count, "error")} prohibited this subscription from being saved:"
+      ul
+        - @subscription.errors.full_messages.each do |msg|
+          li= msg
+
+  dl
+    dt= f.label :title
+    dd= f.select :title, Subscription::Titles
+    dt= f.label :firstname
+    dd= f.text_field :firstname
+    dt= f.label :lastname
+    dd= f.text_field :lastname
+    dt= f.label :organisation
+    dd= f.text_field :organisation
+    dt= f.label :alias
+    dd= f.text_field :alias
+    dt= f.label :email
+    dd= f.text_field :email
+    dt= f.label :phone_number
+    dd= f.text_field :phone_number
+    dt= f.label :website
+    dd= f.text_field :website
+    dt= f.label :twitter_username
+    dd= f.text_field :twitter_username
+    dt= f.label :other
+    dd= f.text_field :other
+    dt= f.label :as, "Subscribe as"
+    dd= f.select :as, Subscription::SubscribeAs
+    dt= f.label :about, "Tell us about you"
+    dd= f.text_area :about
+    dt= f.label :expectations, "Tell us what you expect about this event"
+    dd= f.text_area :expectations
+  .actions
+    = f.submit 'Subscribe'

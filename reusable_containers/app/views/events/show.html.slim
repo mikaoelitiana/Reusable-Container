@@ -1,0 +1,20 @@
+- meta.title = "Event: #{@event.name}"
+section
+  .actions
+    = link_to 'Edit', edit_event_path(@event)
+    = link_to 'Back', events_path
+  .content
+    dl
+      dt Name:
+      dd= @event.name
+      dt Baseline:
+      dd= @event.baseline
+      dt Scheduled at:
+      dd= @event.scheduled_at
+      dt Description:
+      dd= simple_format(@event.description)
+      dt Host:
+      - if @event.host
+        dd= link_to @event.host.name, @event.host
+      br.clear
+

@@ -1,0 +1,25 @@
+// Place all the styles related to the administration controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.odd {
+  background: {
+    color: #EEE;
+  }
+}
+
+.partials {
+  article {
+    padding: {
+      top: 20px;
+      left: 10px;
+      right: 10px;
+    }
+    margin: {
+      bottom: 20px;
+    }
+    border: {
+      bottom: 1px solid #DDD;
+    }
+  }
+}
