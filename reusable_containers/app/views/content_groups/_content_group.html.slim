@@ -1,0 +1,10 @@
+article(class="#{dom_class(content_group)} #{cycle("odd", "even")}" id=dom_id(content_group))
+  dl
+    dt Name
+    dd= content_group.name
+    dt Title
+    dd= content_group.title
+  .actions
+    = link_to 'Show', content_group
+    = link_to 'Edit', edit_content_group_path(content_group)
+    = link_to 'Destroy', content_group, :confirm => 'Are you sure?', :method => :delete
