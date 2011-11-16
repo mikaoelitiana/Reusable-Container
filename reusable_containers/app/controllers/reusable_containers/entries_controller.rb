@@ -36,6 +36,7 @@ module ReusableContainers
           my_request_params = ActiveSupport::HashWithIndifferentAccess.new(@entry.destination_params)
           my_request_params[:current_entry_id] = @entry.id
           @my_env["action_dispatch.request.parameters"] = my_request_params
+          Rails.logger.debug "Appel du sous action!"
           my_status, my_header, my_response = @entry.destination_params[:controller_constant].send(:action, @entry.destination_params[:action]).call(@my_env)
           @action_body = my_response.body
         end
