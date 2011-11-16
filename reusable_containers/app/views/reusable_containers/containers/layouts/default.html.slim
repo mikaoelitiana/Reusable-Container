@@ -1,0 +1,28 @@
+.container
+  header
+    #branding
+      = link_to(image_tag('tedx-antananarivo-340x131.png', :width => 340, :height => 131), public_root_path)
+    - if meta.baseline?
+      #baseline
+        = meta.baseline
+    - if meta.event_date?
+      #event_date
+        = time_tag meta.event_date
+  = render :partial => 'shared/navigation'
+  div(id="main" role="main")
+    section
+      h1= meta.title
+      = yield
+    - if content_for?(:aside)
+      aside
+        = yield(:aside)
+  footer
+    #licence
+      p This independent #{link_to "TEDx", "http://www.ted.com/tedx", :class => "tedx"} event is operated #{link_to "under license", "http://www.ted.com/tedx/groups/49"} from #{link_to "TED", "http://ted.com", :class => "tedx"}.
+    #featured
+      p
+        = \
+          link_to(image_tag("humanstxt-isolated-blank.gif"), \
+          asset_path('misc/humans.txt'), :title => "We are human, not machines")
+    #tools
+      = link_to "Administration", root_path

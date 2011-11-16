@@ -1,0 +1,12 @@
+article(class="#{dom_class(free_content)} #{cycle("odd", "even")}" id=dom_id(free_content))
+  dl
+    dt Name
+    dd= free_content.name
+    dt Title
+    dd= free_content.title
+    dt Content type
+    dd= free_content.content_type
+  .actions
+    = link_to 'Show', free_content
+    = link_to 'Edit', edit_free_content_path(free_content)
+    = link_to 'Destroy', free_content, :confirm => 'Are you sure?', :method => :delete

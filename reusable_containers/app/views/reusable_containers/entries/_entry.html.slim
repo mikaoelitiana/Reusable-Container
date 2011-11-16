@@ -1,0 +1,12 @@
+article(class="#{dom_class(entry)} #{cycle("odd", "even")}" id=dom_id(entry))
+  dl
+    dt Name
+    dd= entry.name
+    dt Title
+    dd= entry.title
+    dt Text
+    dd= entry.text
+  .actions
+    = link_to 'Show', entry
+    = link_to 'Edit', edit_entry_path(entry)
+    = link_to 'Destroy', entry, :confirm => 'Are you sure?', :method => :delete

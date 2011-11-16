@@ -1,0 +1,10 @@
+- meta.title = "Editing #{@content_group_element.class.model_name.human}"
+
+section
+  .actions
+    = link_to 'Show', @content_group_element
+    = link_to 'Back', content_group_elements_path
+  .content
+    == render 'form'
+
+

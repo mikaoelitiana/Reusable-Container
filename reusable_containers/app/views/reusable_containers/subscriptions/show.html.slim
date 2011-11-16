@@ -1,0 +1,31 @@
+- meta.title = "Subscription: #{@subscription.fullname}"
+
+section
+  .actions
+    = link_to 'Edit', edit_subscription_path(@subscription)
+    = link_to 'Back', subscriptions_path
+  .content
+    dl
+      dt Organisation
+      dd= @subscription.title
+      dt Fullname
+      dd= @subscription.firstname
+      dt AKA:
+      dd= @subscription.alias
+      dt Email:
+      dd= @subscription.email
+      dt Phone number:
+      dd= @subscription.phone_number
+      dt Website:
+      dd= @subscription.website
+      dt Twitter:
+      dd= @subscription.twitter_username
+      dt Other:
+      dd= @subscription.other
+      dt As:
+      dd= @subscription.as
+      dt About:
+      dd= @subscription.about
+      dt Expectations:
+      dd= @subscription.expectations
+

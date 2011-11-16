@@ -1,0 +1,56 @@
+- meta.title= @entry.title
+
+- if dark_side?
+  dl
+    dt Status:
+    dd= @entry.active? ? "Active" : "Inactive"
+
+    dt Published:
+    dd= @entry.published? ? "Published" : "Hidden"
+
+    dt Name:
+    dd= @entry.name
+
+    dt Title:
+    dd= @entry.title
+
+    dt Slug:
+    dd= @entry.slug
+
+    dt Text:
+    dd= @entry.text
+
+    dt Keywords:
+    dd= @entry.keywords
+
+    dt Description:
+    dd= @entry.description
+
+    dt Destination:
+    dd
+      ul
+        li= @entry.destination_params.inspect
+        - if @entry.active?
+          - if @entry.destination_object
+            li= link_to @entry.destination_object.class.model_name.human,\
+            @entry.destination_object
+          - else
+            li= @entry.destination_string
+
+    dt Container:
+    dd= link_to @entry.container.name, @entry.container
+
+    dt Descendants:
+    dd= @entry.descendants.map{ |e| link_to(e.name, e) }.join(" > ").html_safe
+
+    dt Ancestors:
+    dd= @entry.ancestors.map{ |e| link_to(e.name, e) }.join(" > ").html_safe
+
+  .actions
+    = link_to 'Edit', edit_entry_path(@entry)
+    = link_to 'Back', entries_path
+- else
+  - if @action_body
+    - meta.title = @entry.title
+    article
+      = @action_body.html_safe
