@@ -26,7 +26,7 @@ html lang="#{I18n.locale}"
     .container
       header
         #branding
-          
+          = link_to(image_tag('tedx-antananarivo-340x131.png', :width => 340, :height => 131), root_path)
         #baseline
           = meta.baseline
         #other_info
@@ -42,7 +42,7 @@ html lang="#{I18n.locale}"
           = render 'shared/administration_links'
       footer
         #licence
-          p &copy;
+          p This independent #{link_to "TEDx", "http://www.ted.com/tedx", :class => "tedx"} event is operated #{link_to "under license", "http://www.ted.com/tedx/groups/49"} from #{link_to "TED", "http://ted.com", :class => "tedx"}.
         #featured
           p
             = \
