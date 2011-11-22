@@ -1,7 +1,7 @@
 module ReusableContainers
-  class AdministrationController < ApplicationController
+  class AdministrationController < ApplicationController 
     def index
+     
     end
-
   end
 end

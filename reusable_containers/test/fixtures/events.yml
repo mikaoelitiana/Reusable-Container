@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  baseline: MyString
+  scheduled_at: 2011-10-14 08:23:36
+  description: MyText
+  host_id: 
+
+two:
+  name: MyString
+  baseline: MyString
+  scheduled_at: 2011-10-14 08:23:36
+  description: MyText
+  host_id: 

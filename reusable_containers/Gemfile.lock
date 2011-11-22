@@ -2,7 +2,16 @@ PATH
   remote: .
   specs:
     reusable_containers (0.0.1)
+      ancestry
+      friendly_id (~> 4.0.0.beta14)
+      jquery-rails
+      json
+      kaminari
+      pg
       rails (~> 3.1.1)
+      ransack
+      slim-rails
+      squeel
 
 GEM
   remote: http://rubygems.org/

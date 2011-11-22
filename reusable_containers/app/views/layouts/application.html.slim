@@ -7,7 +7,7 @@ html lang="#{I18n.locale}"
   /! <![endif]
   head
     meta charset="utf-8"
-    title #{meta.browser_title? ? meta.browser_title : meta.title} | Administration | TEDxAntananarivo, x=Independently organized TED event
+    title #{meta.browser_title? ? meta.browser_title : meta.title}
 
     /![if lt IE 9]
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -39,10 +39,10 @@ html lang="#{I18n.locale}"
         .content
           = yield
         nav
-          = render 'shared/administration_links'
+          = render 'shared/navigation'
       footer
         #licence
-          p &copy;
+          
         #featured
           p
             = \

@@ -21,4 +21,5 @@ module ReusableContainers
       @current_container ||= current_entry.container
     end
   end
+  
 end

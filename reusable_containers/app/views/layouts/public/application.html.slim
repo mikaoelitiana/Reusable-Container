@@ -7,7 +7,7 @@ html lang="#{I18n.locale}"
   /! <![endif]
   head
     meta charset="utf-8"
-    title #{meta.browser_title? ? meta.browser_title : meta.title} | TEDxAntananarivo, x=Independently organized TED event
+    title #{meta.browser_title? ? meta.browser_title : meta.title} 
     - if meta.description?
       meta content="#{meta.description}" name="description"
     - if meta.author?
@@ -35,4 +35,4 @@ html lang="#{I18n.locale}"
     link href=asset_path('humans.txt') rel="author"
   body
     = yield
-    = javascript_include_tag "application"
+    = javascript_include_tag "reusable_containers"

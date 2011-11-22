@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  content_group: 
+  element: 
+  position: 1
+  layout: MyString
+
+two:
+  content_group: 
+  element: 
+  position: 1
+  layout: MyString

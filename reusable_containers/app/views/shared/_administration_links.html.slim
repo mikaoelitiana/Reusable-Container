@@ -1,4 +1,4 @@
 br.clear
 ul
   - [ Entry, FreeContent, ContentGroup, Event, Host, Container, Subscription ].each do |e|
-    li= link_to e.model_name.human, polymorphic_path(e)
+    li= link_to e.model_name.human, polymorphic_path([reusable_containers,e])

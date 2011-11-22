@@ -8,6 +8,5 @@ class FreeContent < ActiveRecord::Base
   ].freeze
   validates_presence_of :name, :title, :content_type
   validates_uniqueness_of :name
-
   include Element
 end

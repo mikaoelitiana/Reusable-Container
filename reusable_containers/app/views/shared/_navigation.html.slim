@@ -1,5 +1,4 @@
-- cache "navigation_#{current_entry.id}" do
-  nav
-    ul
-      - Entry.published.each do |e|
-        li= public_link_to_entry(e)
+nav
+  ul
+    - Entry.published.each do |e|
+      li= public_link_to_entry(reusable_containers,e)
