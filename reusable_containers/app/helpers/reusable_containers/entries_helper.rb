@@ -1,5 +1,7 @@
 module ReusableContainers
   module EntriesHelper
+    Rails.logger.debug "Dans le helper pour entry"
+    
     def public_path_to_entry(entry)
       public_entry_url(:ancestry_slug => entry.ancestry_slug, :slug => entry.slug)
     end

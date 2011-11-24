@@ -7,6 +7,7 @@ ReusableContainers::Engine.routes.draw do
     resources :containers
     resources :entries
     resources :subscriptions
+    resources :pages
     scope ":element_type_controller/:element_id" do
       resources :content_group_elements
     end

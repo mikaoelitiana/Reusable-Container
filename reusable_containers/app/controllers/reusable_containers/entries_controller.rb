@@ -1,5 +1,6 @@
 module ReusableContainers
   class EntriesController < ApplicationController
+    helper_method :public_path_to_entry, :public_link_to_entry
     # GET /entries
     # GET /entries.json
     def index
