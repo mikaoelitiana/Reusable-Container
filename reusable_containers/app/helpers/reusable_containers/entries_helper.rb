@@ -1,12 +1,11 @@
 module ReusableContainers
   module EntriesHelper
-    Rails.logger.debug "Dans le helper pour entry"
-    
     def public_path_to_entry(entry)
       public_entry_url(:ancestry_slug => entry.ancestry_slug, :slug => entry.slug)
     end
 
     def public_link_to_entry(entry)
+    Rails.logger.debug "ici => "
       if entry != current_entry && entry.active?
         if entry.direct?
           link_to entry.text, entry.destination_string, :title => entry.title, :class => "entry_links"
