@@ -7,11 +7,11 @@ require "reusable_containers/version"
 Gem::Specification.new do |s|
   s.name        = "reusable_containers"
   s.version     = ReusableContainers::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of ReusableContainers."
-  s.description = "TODO: Description of ReusableContainers."
+  s.authors     = ["tosoa Bacca", "Mika Andrianarijaona"]
+  s.email       = ["tosoa@jojopil.com", "mikaoelitiana@jojopil.com"]
+  s.homepage    = "http://jojopil.com"
+  s.summary     = "Reusable Containers Publication System"
+  s.description = "Yet another structured content publication system"
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
