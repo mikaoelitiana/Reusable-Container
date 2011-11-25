@@ -1,0 +1,12 @@
+= ReusableContainers
+
+== Installation
+
+ * Add to your gemfile : 
+     
+    gem 'reusable_containers'
+    
+ * run from command line : 
+ 
+    rake reusable_containers:install:migrations
+    rake db:migrate
