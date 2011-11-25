@@ -1,6 +1,6 @@
-class CreateEntries < ActiveRecord::Migration
+class CreateReusableContainersEntries < ActiveRecord::Migration
   def change
-    create_table :entries do |t|
+    create_table :reusable_containers_entries do |t|
       t.string :name
       t.string :title
       t.string :text
@@ -10,6 +10,6 @@ class CreateEntries < ActiveRecord::Migration
 
       t.timestamps
     end
-    add_index :entries, :container_id
+    add_index :reusable_containers_entries, :container_id
   end
 end

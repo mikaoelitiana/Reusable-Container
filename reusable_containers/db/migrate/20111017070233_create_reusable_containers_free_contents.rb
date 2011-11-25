@@ -1,6 +1,6 @@
-class CreateFreeContents < ActiveRecord::Migration
+class CreateReusableContainersFreeContents < ActiveRecord::Migration
   def change
-    create_table :free_contents do |t|
+    create_table :reusable_containers_free_contents do |t|
       t.string :name
       t.string :title
       t.string :css_classes

@@ -1,17 +1,21 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  name: MyString
-  title: MyString
-  text: MyString
-  keywords: MyString
-  description: MyString
-  container: 
+  name: UneEntree
+  title: Une entrée
+  text: Bienvenue
+  keywords: entree,bienvenue
+  description: ficture
+  container: 1
+  published : t
+  slug: home
 
 two:
-  name: MyString
-  title: MyString
-  text: MyString
-  keywords: MyString
-  description: MyString
-  container: 
+  name: UneAutreEntree
+  title: Encore une entrée
+  text: Bienvenue
+  keywords: entree,bienvenue
+  description: ficture
+  container: 2
+  published : t
+  slug: une-autre-page
