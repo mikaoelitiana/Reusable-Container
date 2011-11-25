@@ -1,4 +1,4 @@
 br.clear
 ul
-  - [ Entry, FreeContent, ContentGroup, Container].each do |e|
+  - [ ReusableContainers::Entry, ReusableContainers::FreeContent, ReusableContainers::ContentGroup, ReusableContainers::Container].each do |e|
     li= link_to e.model_name.human, polymorphic_path([reusable_containers,e])
