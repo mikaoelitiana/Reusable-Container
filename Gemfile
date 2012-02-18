@@ -12,7 +12,6 @@ gemspec
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
-source 'http://rubygems.org'
 
 gem 'rails', '~> 3.2.0'
 
@@ -30,7 +29,6 @@ gem 'ransack'
 gem 'friendly_id', '~> 4.0.0.beta14'
 gem 'ancestry'
 
-gem 'jquery-rails'
 
 gem 'json'
 
@@ -43,8 +41,6 @@ group :assets do
   gem 'uglifier'
   gem 'therubyracer'
 end
-
-gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -59,9 +55,6 @@ gem 'jquery-rails'
 # gem 'ruby-debug'
 
 group :development do
-  # Deploy with Capistrano
-  gem 'capistrano'
-  gem 'mongrel', '> 1.2.0.pre2'
 end
 
 # To use debugger
