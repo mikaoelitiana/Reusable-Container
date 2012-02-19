@@ -55,6 +55,7 @@ end
 # gem 'ruby-debug'
 
 group :development do
+	gem 'thin'
 end
 
 # To use debugger
